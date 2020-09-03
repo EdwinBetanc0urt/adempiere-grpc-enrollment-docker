@@ -8,7 +8,7 @@ You will need use a file with a structure like it: [enrollment_connection.yaml](
 ```yaml
 
 server:
-    port: 50047
+    port: 50053
 database:
     host: localhost
     port: 5432
@@ -25,7 +25,7 @@ Run the latest container with:
 
 ```shell
 docker run --name adempiere-grpc-enrollment -it \
-	-p 50047:50047 \
+	-p 50053:50053 \
 	-v $(pwd)/enrollment_connection.yaml:/opt/Apps/ADempiere-gRPC-Server/bin/enrollment_connection.yaml \
 	erpya/adempiere-grpc-enrollment
 ```
